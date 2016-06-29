@@ -1,0 +1,6 @@
+C:\Users\Sasa\Documents\Visual Studio 2013\Projects\Vježbe\NoviCarousel\NoviCarousel\bin\NoviCarousel.dll.config
+C:\Users\Sasa\Documents\Visual Studio 2013\Projects\Vježbe\NoviCarousel\NoviCarousel\bin\NoviCarousel.dll
+C:\Users\Sasa\Documents\Visual Studio 2013\Projects\Vježbe\NoviCarousel\NoviCarousel\bin\NoviCarousel.pdb
+C:\Users\Sasa\Documents\Visual Studio 2013\Projects\Vježbe\NoviCarousel\NoviCarousel\obj\Debug\NoviCarousel.csprojResolveAssemblyReference.cache
+C:\Users\Sasa\Documents\Visual Studio 2013\Projects\Vježbe\NoviCarousel\NoviCarousel\obj\Debug\NoviCarousel.dll
+C:\Users\Sasa\Documents\Visual Studio 2013\Projects\Vježbe\NoviCarousel\NoviCarousel\obj\Debug\NoviCarousel.pdb
