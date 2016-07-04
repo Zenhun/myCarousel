@@ -3,8 +3,13 @@
     var nextSlide;
     var index;
     var move;
+    var timer
 
-    window.setTimeout(moveNext, 2000);
+    //setting the timer so it starts the animation on document.ready
+    timer = setTimeout(moveNext, 2000);
+    
+    //stop animation on hover over image or dots; resetting timer on hover out
+    $('li.image, .dot').hover(function () { clearInterval(timer); }, function () { timer = setTimeout(moveNext, 2000); });
 
     function moveSlide(currentSlide, nextSlide, move, index) {
         $('.image').animate(move, 600);
@@ -12,10 +17,11 @@
         currentSlide.removeClass('active-image');
         nextSlide.addClass('active-image');
 
+        //find the dot that has the same index as 'next' slide and add active-dot class; at the same time remove active-dot class from all other siblings
         $("body").find('.dot').eq(index).addClass('active-dot').siblings('.dot').removeClass('active-dot');
     };
 
-    var moveNext = function () {
+    function moveNext () {
         currentSlide = $('.active-image');
         nextSlide = currentSlide.next();
         if (nextSlide.length === 0) {
@@ -28,6 +34,10 @@
         }
 
         moveSlide(currentSlide, nextSlide, move, index);
+        //clearing timer interval so that timer countdown starts over after mouse click
+        clearInterval(timer);
+        //setting the interval inside the function so it gets called after every move
+        timer = setTimeout(moveNext, 2000);
     };
 
 
