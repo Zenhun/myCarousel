@@ -4,7 +4,6 @@
 .images {width: 3000px; position: relative; }
 .images li { list-style-type: none; display: inline-block; margin-right: -4px;}
 li .active-image {display: inline;}
-.active-image:hover {cursor:pointer; }
 .image {display: none; position: relative;}
 
 .controls {margin: 15px auto; text-align:center;width: 200px;}

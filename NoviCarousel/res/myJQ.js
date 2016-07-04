@@ -6,10 +6,10 @@
     var timer
 
     //setting the timer so it starts the animation on document.ready
-    timer = setTimeout(moveNext, 2000);
+    timer = setTimeout(moveNext, 5000);
     
     //stop animation on hover over image or dots; resetting timer on hover out
-    $('li.image, .dot').hover(function () { clearInterval(timer); }, function () { timer = setTimeout(moveNext, 2000); });
+    $('li.image, .controls').hover(function () { clearInterval(timer); }, function () { timer = setTimeout(moveNext, 5000); });
 
     function moveSlide(currentSlide, nextSlide, move, index) {
         $('.image').animate(move, 600);
@@ -37,11 +37,11 @@
         //clearing timer interval so that timer countdown starts over after mouse click
         clearInterval(timer);
         //setting the interval inside the function so it gets called after every move
-        timer = setTimeout(moveNext, 2000);
+        timer = setTimeout(moveNext, 5000);
     };
 
 
-    $('li.image, .right-arrow').click(moveNext);
+    $('.right-arrow').click(moveNext);
 
     $('.left-arrow').click(function () {
         currentSlide = $('.active-image');
